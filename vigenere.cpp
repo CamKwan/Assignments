@@ -5,7 +5,6 @@
 // Input: Alphabet, Message, Key
 // Output: Alphabet, Message, Key, Encryption, Decryption
 
-
 #include <iostream>
 #include <string>
 
@@ -20,9 +19,6 @@ int NumKey(std::string Key, std::string alpha, int i){
     }
     return index;
 }
-
-
-
 
 int main(){
     std::string alpha{};
