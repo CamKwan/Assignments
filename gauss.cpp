@@ -12,13 +12,14 @@
 #include <cmath>
 #include <exception>
 
-/* DO NOT MODIFY ANY CODE BETWEEN THIS LINE AND main() */
+
 using Matrix = std::vector< std::vector< double > >;
 
 /* read_matrix()
-   Attempt to read a matrix (in the format described in the assignment specification)
-   from standard input. If a matrix is read successfully, it will be returned. If
-   any kind of read error occurs, the function will throw an instance of std::runtime_error.
+   Attempt to read a matrix from standard input.
+   If a matrix is read successfully, it will be returned.
+   If any kind of read error occurs, the function will
+   throw an instance of std::runtime_error.
 */
 Matrix read_matrix(){
     int rows, cols;
@@ -47,10 +48,7 @@ Matrix read_matrix(){
     return result;
 }
 
-/* PUT YOUR SOLUTION BELOW THIS LINE */
-/* You may add extra functions if necessary */
-
-
+//Check if the matrix is in a valid format for  row reduction
 void checkMatrix( Matrix M){
     for (unsigned int i {0}; i < M.size(); i++){
         if ((unsigned)M.at(i).at(i) < 0.0000001 ){
